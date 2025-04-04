@@ -1,0 +1,33 @@
+.users {
+  @extend %padding;
+  &__title {
+    @extend %title;
+    font-style: normal;
+    line-height: normal;
+  }
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: rgba(175, 177, 184, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__list {
+    @include flexbox($space: 30px);
+
+  }
+  &__link {
+    @include flexbox($alignment: center, $horizontal: center);
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover .users__icon {
+    fill: $navigation-color;
+  }
+  &__link:hover {
+    border-color: $navigation-color;
+  }
+}

@@ -1,0 +1,42 @@
+.team {
+  @extend %padding;
+  background-color: rgba(245, 244, 250, 1);
+  &__title {
+    @extend %title;
+    line-height: 1.16;
+  }
+  &__list {
+    @include flexbox($space: 30px);
+  }
+  &__item {
+    padding-bottom: 30px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    background: $main_title-color;
+  }
+  &_img {
+    margin-bottom: 30px;
+  }
+  &__name {
+    @include info(
+      $color: $title-color,
+      $align: center,
+      $weight: 500,
+      $height: 1.19
+    );
+    margin-bottom: 10px;
+    animation-name: move-name;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  &__text {
+    @include info(
+      $color: $icons-color,
+      $align: center,
+      $weight: 400,
+      $height: 1.19
+    );
+  }
+}
