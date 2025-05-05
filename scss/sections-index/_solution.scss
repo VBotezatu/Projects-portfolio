@@ -1,11 +1,13 @@
 .solution {
-  background: $title-color;
+  // background: $title-color;
   padding-top: 200px;
   padding-bottom: 200px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
+  background-image: url(../../images/fruit-background.webp), linear-gradient(rgb(10 1 177), rgb(126, 177, 1));;
   &__title {
-    color: $background-color;
+    color: yellow;
     text-align: center;
     font-size: 44px;
     font-weight: 900;
@@ -17,7 +19,8 @@
   }
   &__button {
     @extend %button;
-    color: $main_title-color;
+    background-color: yellow;
+    color: $logo-color;
     line-height: 1.88;
     width: 216px;
     flex-shrink: 0;

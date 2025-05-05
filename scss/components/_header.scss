@@ -1,10 +1,11 @@
 .header {
   &__container {
     @include flexbox($alignment: center);
+    flex-wrap: wrap;
   }
   &__logo {
     @include text(
-      $color: $navigation-color,
+      $color: rgba(126, 177, 1, 1),
       $size: 26px,
       $weight: 700,
       $height: 1.38,
@@ -16,7 +17,17 @@
     transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
+  &__logobox {
+    position: relative;
+    margin-right: 93px;
+  }
+  &__photo {
+    position: absolute;
+    top: -7px;
+    left: -60px;
+    width: 50px;
+    height: 50px;
+  }
   &__adress:hover span {
     color: $navigation-color;
   }
@@ -28,7 +39,7 @@
     height: 16px;
   }
   &__studio {
-    color: $logo-color;
+    color: rgb(10, 1, 177);
   }
 
   &__letter {
@@ -40,12 +51,11 @@
     fill: rgba(117, 117, 117, 1);
   }
   &__list {
-    margin-left: 93px;
     @include flexbox($space: 60px, $alignment: center);
   }
   &__link {
     @include text(
-      $color: $title-color,
+      $color: rgb(10, 1, 177),
       $size: 14px,
       $weight: 500,
       $height: 1.14,
@@ -59,7 +69,7 @@
     @include overlay($height: 4px);
     display: block;
     border-radius: 2px;
-    background-color: $navigation-color;
+    background-color: rgba(126, 177, 1, 1);
     margin-top: 29px;
   }
   &__link:hover::after {
@@ -69,12 +79,18 @@
     color: $navigation-color;
   }
   &__contacts {
-    margin-left: 318px;
+    @media screen and (max-width:800px){
+      margin-top: 10px;
+    }
     @include flexbox($space: 30px);
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      margin-left: 318px;
+    }
   }
   &__adress {
     @include text(
-      $color: $text-color,
+      $color: rgb(10, 1, 177),
       $size: 14px,
       $weight: 500,
       $height: 1.14,

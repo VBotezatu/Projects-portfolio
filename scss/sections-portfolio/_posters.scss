@@ -64,4 +64,9 @@
     transform: translateY(0);
     pointer-events: auto;
   }
+  &__photo {
+    object-fit: cover;
+    width: 370px;
+    height: 294px;
+  }
 }

@@ -75,11 +75,26 @@ img {
   }
 }
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 476px) {
+  .container {
+    width: 476px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 body {
@@ -133,9 +148,10 @@ body {
   gap: 0px;
   justify-content: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .header__logo {
-  color: #2196f3;
+  color: rgb(126, 177, 1);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.38;
@@ -150,6 +166,17 @@ body {
   flex-direction: row;
   transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header__logobox {
+  position: relative;
+  margin-right: 93px;
+}
+.header__photo {
+  position: absolute;
+  top: -7px;
+  left: -60px;
+  width: 50px;
+  height: 50px;
+}
 .header__adress:hover span {
   color: #2196f3;
 }
@@ -161,7 +188,7 @@ body {
   height: 16px;
 }
 .header__studio {
-  color: #000000;
+  color: rgb(10, 1, 177);
 }
 .header__letter {
   width: 16px;
@@ -172,7 +199,6 @@ body {
   fill: rgb(117, 117, 117);
 }
 .header__list {
-  margin-left: 93px;
   align-items: center;
   display: flex;
   gap: 60px;
@@ -180,7 +206,7 @@ body {
   flex-direction: row;
 }
 .header__link {
-  color: #212121;
+  color: rgb(10, 1, 177);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -198,7 +224,7 @@ body {
   opacity: 0;
   display: block;
   border-radius: 2px;
-  background-color: #2196f3;
+  background-color: rgb(126, 177, 1);
   margin-top: 29px;
 }
 .header__link:hover::after {
@@ -208,15 +234,25 @@ body {
   color: #2196f3;
 }
 .header__contacts {
-  margin-left: 318px;
   align-items: flex-start;
   display: flex;
   gap: 30px;
   justify-content: flex-start;
   flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  .header__contacts {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    margin-left: 318px;
+  }
 }
 .header__adress {
-  color: #757575;
+  color: rgb(10, 1, 177);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -229,14 +265,15 @@ body {
 }
 
 .solution {
-  background: #212121;
   padding-top: 200px;
   padding-bottom: 200px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
+  background-image: url(../../images/fruit-background.webp), linear-gradient(rgb(10, 1, 177), rgb(126, 177, 1));
 }
 .solution__title {
-  color: #fff;
+  color: yellow;
   text-align: center;
   font-size: 44px;
   font-weight: 900;
@@ -247,7 +284,8 @@ body {
   max-width: 596px;
 }
 .solution__button {
-  color: #fff;
+  background-color: yellow;
+  color: #000000;
   line-height: 1.88;
   width: 216px;
   flex-shrink: 0;
@@ -359,9 +397,15 @@ body {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
+  max-width: 270px;
+  max-height: 368px;
 }
-.team_img {
+.team__img {
   margin-bottom: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 270px;
+  height: 260px;
 }
 .team__name {
   color: #212121;
@@ -427,7 +471,7 @@ body {
   padding-bottom: 60px;
 }
 .footer__title {
-  color: #2196f3;
+  color: rgb(126, 177, 1);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.39;
@@ -439,7 +483,7 @@ body {
   animation-direction: alternate;
 }
 .footer__studio {
-  color: #fff;
+  color: rgb(10, 1, 177);
 }
 .footer__adress {
   color: #fff;

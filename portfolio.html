@@ -22,24 +22,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./scss/portfolio.css">
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
-        <p class="header__logo animate__animated animate__tada">
-          Web<span class="header__studio">Studio</span>
-        </p>
+        <div class="header__logobox">
+          <img class="header__photo" src="./images/logo.jpeg" alt="photo" />
+          <p class="header__logo animate__animated animate__tada">
+            FREZE<span class="header__studio">PEZY</span>
+          </p>
+        </div>
         <nav class="header__navigation">
           <ul class="header__list">
             <li class="header__item1 animate__animated animate__bounceInLeft">
-              <a class="header__link" href="./index.html">Studio</a>
+              <a class="header__link" href="./index.html">Main</a>
             </li>
             <li class="header__item animate__animated animate__backInDown">
-              <a class="header__link" href="./portfolio.html">Portfolio</a>
+              <a class="header__link" href="./portfolio.html">Ingredients</a>
             </li>
             <li class="header__item animate__animated animate__bounceInRight">
-              <a class="header__link" href="#">Contacts</a>
+              <a class="header__link" href="#">Contact</a>
             </li>
           </ul>
         </nav>
@@ -49,7 +52,7 @@
               <svg class="header__letter">
                 <use href="./images/symbol-defs.svg#icon-letter"></use>
               </svg>
-              <span>info@devstudio.com</span>
+              <span>info@frezepezy.com</span>
             </a>
           </li>
           <li class="header__contact">
@@ -57,185 +60,115 @@
               <svg class="header__phone">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
-              <span>+380 961 11 11 11</span>
+              <span>+380 974 81 81 25</span>
             </a>
           </li>
         </ul>
       </div>
     </header>
     <main class="portfolio-main">
-      <!-- buttons -->
-      <section class="button">
-        <div class="container button__container">
-          <ul class="button__list">
-            <li class="button__item">
-              <button class="button__button" type="button">All</button>
-            </li>
-            <li class="button__item">
-              <button class="button__button" type="button">Websites</button>
-            </li>
-            <li class="button__item">
-              <button class="button__button" type="button">Application</button>
-            </li>
-            <li class="button__item">
-              <button class="button__button" type="button">Design</button>
-            </li>
-            <li class="button__item">
-              <button class="button__button" type="button">Marketing</button>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <section class="button"></section>
       <!-- posters -->
       <section class="posters postersss">
         <div class="container">
           <ul class="posters__imgs">
             <li class="posters__img" data-aos="fade-up">
-              <div class="posters__overlay">
-                <p class="posters__info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
               <img
                 class="posters__photo"
-                src="./images/computer.png"
+                src="https://cdn1.foodviva.com/static-content/food-images/juice-recipes/cherry-juice-recipe/cherry-juice-recipe.jpg"
                 alt="computer"
               />
               <div class="posters__box">
-                <h3 class="posters__title">Technocrack</h3>
-                <p class="posters__text">Website</p>
+                <h3 class="posters__title">Cherry juice</h3>
+                <p class="posters__text">Ingredient</p>
               </div>
             </li>
             <li class="posters__img" data-aos="fade-up">
-              <div class="posters__overlay">
-                <p class="posters__info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
               <img
                 class="posters__photo"
-                src="./images/basketball.png"
+                src="https://www.orchidsandsweettea.com/wp-content/uploads/2024/10/Homemade-Fresh-Apple-Juice.jpg"
                 alt="basketball"
               />
               <div class="posters__box">
-                <h3 class="posters__title">
-                  New Orleans vs Golden Star poster
-                </h3>
-                <p class="posters__text">Design</p>
+                <h3 class="posters__title">Apple juice</h3>
+                <p class="posters__text">Ingredient</p>
               </div>
             </li>
             <li class="posters__img" data-aos="fade-up">
-              <div class="posters__overlay">
-                <p class="posters__info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <img class="posters__photo" src="./images/fish.png" alt="fish" />
-              <div class="posters__box">
-                <h3 class="posters__title">Seafood restaurant</h3>
-                <p class="posters__text">Application</p>
-              </div>
-            </li>
-            <li class="posters__img" data-aos="fade-up">
-              <div class="posters__overlay">
-                <p class="posters__info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
               <img
                 class="posters__photo"
-                src="./images/earphones.png"
+                src="https://www.acouplecooks.com/wp-content/uploads/2021/07/Pineapple-Mojito-008.jpg"
+                alt="fish"
+              />
+              <div class="posters__box">
+                <h3 class="posters__title">Pineapple juice</h3>
+                <p class="posters__text">Ingredient</p>
+              </div>
+            </li>
+            <li class="posters__img" data-aos="fade-up">
+              <img
+                class="posters__photo"
+                src="https://www.mixcompany.de/media/7d/1b/ac/1641914306/Schweppes_Tonic_Water_6er_Set_6x_1L_inkl._Pfand_EINWEG.jpg"
                 alt="earphones"
               />
               <div class="posters__box">
-                <h3 class="posters__title">Project Prime</h3>
-                <p class="posters__text">Marketing</p>
+                <h3 class="posters__title">Schweppes</h3>
+                <p class="posters__text">Ingredient</p>
               </div>
             </li>
             <li class="posters__img" data-aos="fade-up">
-              <div class="posters__overlay">
-                <p class="posters__info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <img class="posters__photo" src="./images/box.png" alt="box" />
-              <div class="posters__box">
-                <h3 class="posters__title">Boxes project</h3>
-                <p class="posters__text">Application</p>
-              </div>
-            </li>
-            <li class="posters__img" data-aos="fade-up">
-              <div class="posters__overlay">
-                <p class="posters__info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <img class="posters__photo" src="./images/iMac.png" alt="iMac" />
-              <div class="posters__box">
-                <h3 class="posters__title">Inspiration has no Borders</h3>
-                <p class="posters__text">Website</p>
-              </div>
-            </li>
-            <li class="posters__img" data-aos="fade-up">
-              <div class="posters__overlay">
-                <p class="posters__info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
               <img
                 class="posters__photo"
-                src="./images/books.png"
+                src="https://souriredessaveurs.com/2470-large_default/sprite-metall-33-cl.jpg"
+                alt="box"
+              />
+              <div class="posters__box">
+                <h3 class="posters__title">Sprite</h3>
+                <p class="posters__text">Ingredient</p>
+              </div>
+            </li>
+            <li class="posters__img" data-aos="fade-up">
+              <img
+                class="posters__photo"
+                src="https://m.media-amazon.com/images/I/41n6RaPEvmL.jpg"
+                alt="iMac"
+              />
+              <div class="posters__box">
+                <h3 class="posters__title">Ice</h3>
+                <p class="posters__text">Ingredient</p>
+              </div>
+            </li>
+            <li class="posters__img" data-aos="fade-up">
+              <img
+                class="posters__photo"
+                src="https://seedsireland.ie/cdn/shop/files/MintSquare2_1445x.webp?v=1705394680"
                 alt="books"
               />
               <div class="posters__box">
-                <h3 class="posters__title">Edition Limited Edition</h3>
-                <p class="posters__text">Design</p>
+                <h3 class="posters__title">Mint</h3>
+                <p class="posters__text">Ingredient</p>
               </div>
             </li>
             <li class="posters__img" data-aos="fade-up">
-              <div class="posters__overlay">
-                <p class="posters__info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <img class="posters__photo" src="./images/Lab.png" alt="Lab" />
-              <div class="posters__box">
-                <h3 class="posters__title">LAB project</h3>
-                <p class="posters__text">Marketing</p>
-              </div>
-            </li>
-            <li class="posters__img" data-aos="fade-up">
-              <div class="posters__overlay">
-                <p class="posters__info">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
               <img
                 class="posters__photo"
-                src="./images/portfolio-laptop.png"
+                src="https://orchardfruit.com/cdn/shop/files/Lime-Pc-The-Orchard-Fruit-72137290.jpg?v=1722937824&width=1000"
+                alt="Lab"
+              />
+              <div class="posters__box">
+                <h3 class="posters__title">Lime</h3>
+                <p class="posters__text">Ingredient</p>
+              </div>
+            </li>
+            <li class="posters__img" data-aos="fade-up">
+              <img
+                class="posters__photo"
+                src="https://cactus-online.ru/upload/iblock/fe1/fe141412bbe722ebe42554d5ed052ab8.jpg"
                 alt="Laptop"
               />
               <div class="posters__box">
-                <h3 class="posters__title">Growing Business</h3>
-                <p class="posters__text">Application</p>
+                <h3 class="posters__title">Cap</h3>
+                <p class="posters__text">Ingredient</p>
               </div>
             </li>
           </ul>
@@ -246,24 +179,24 @@
       <div class="container flex__container">
         <div class="footer__container">
           <h2 class="footer__title">
-            Web<span class="footer__studio">Studio</span>
+            FREZE<span class="footer__studio">PEZY</span>
           </h2>
           <address class="footer__map">
             <a
               class="footer__adress"
               href="https://maps.app.goo.gl/RBHHMhqie99F5W619"
-              >Kyiv, 26 Lesi Ukrainky Ave</a
+              >Heidelberg, HPC school</a
             >
           </address>
           <ul class="list__information">
             <li class="item__informationn">
               <a class="footer__information" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+                >info@frezepezy.com</a
               >
             </li>
             <li class="item__information">
               <a class="footer__information" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+                >+380 974 81 81 25</a
               >
             </li>
           </ul>

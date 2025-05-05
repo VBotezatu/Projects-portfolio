@@ -4,7 +4,7 @@
   padding-bottom: 60px;
   &__title {
     @include text(
-      $color: $navigation-color,
+      $color: rgba(126, 177, 1, 1),
       $size: 26px,
       $weight: 700,
       $height: 1.39,
@@ -16,7 +16,7 @@
     animation-direction: alternate;
   }
   &__studio {
-    color: $main_title-color;
+    color: rgb(10, 1, 177);
   }
   &__adress {
     @include text(
