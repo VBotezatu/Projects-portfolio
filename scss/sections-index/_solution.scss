@@ -1,13 +1,13 @@
 .solution {
   // background: $title-color;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 260px;
+  padding-bottom: 260px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  background-image: url(../../images/fruit-background.webp), linear-gradient(rgb(10 1 177), rgb(126, 177, 1));;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVsJra7Rdc4ehn39o2sQW1hA9BP51afG1uVA&s);
+  background-size: cover;
   &__title {
-    color: yellow;
     text-align: center;
     font-size: 44px;
     font-weight: 900;

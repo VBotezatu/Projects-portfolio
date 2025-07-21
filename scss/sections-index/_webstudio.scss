@@ -1,0 +1,36 @@
+.webstudio {
+  @extend %padding;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: rgba(245, 244, 250, 1);
+  &__text {
+    color: #212121;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 200% */
+    letter-spacing: 1.08px;
+    max-width: 500px;
+    margin-left: 20px;
+  }
+  &__title {
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px; /* 136.364% */
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  &__img {
+    width: 400px;
+    height: 250px;
+  }
+  &__box {
+    display: flex;
+    gap: 500px;
+  }
+}

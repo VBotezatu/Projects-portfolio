@@ -4,12 +4,8 @@
 @import "./utilities/placeholders";
 @import "./utilities/animations";
 @import "./base/common";
-@import "./components/socials";
-@import "./components/header";
+@import "./sections-index/header";
 @import "./sections-index/solution";
-@import "./sections-index/features";
-@import "./sections-index/photo";
-@import "./sections-index/team";
-@import "./sections-index/users";
-@import "./components/footer";
-@import "./modal/modal";
+@import "./sections-index/english";
+@import "./sections-index/webstudio";
+@import "./sections-index/chocolate";
